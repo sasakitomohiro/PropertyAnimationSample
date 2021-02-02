@@ -9,7 +9,8 @@ import com.github.sasakitomohiro.propertyanimationsample.databinding.FragmentMai
 
 class MainFragment : Fragment(R.layout.fragment_main) {
     private var _binding: FragmentMainBinding? = null
-    private val binding: FragmentMainBinding = _binding!!
+    private val binding: FragmentMainBinding
+        get() = _binding!!
 
     private val propertyAnimationAdapter = PropertyAnimationAdapter(::navigate)
 

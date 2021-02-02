@@ -8,7 +8,8 @@ import com.github.sasakitomohiro.propertyanimationsample.databinding.FragmentObj
 
 class ObjectAnimatorFragment : Fragment(R.layout.fragment_object_animator) {
     private var _binding: FragmentObjectAnimatorBinding? = null
-    private val binding: FragmentObjectAnimatorBinding = _binding!!
+    private val binding: FragmentObjectAnimatorBinding
+        get() = _binding!!
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
