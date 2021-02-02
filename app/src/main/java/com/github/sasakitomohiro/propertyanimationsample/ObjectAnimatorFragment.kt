@@ -15,7 +15,7 @@ class ObjectAnimatorFragment : Fragment(R.layout.fragment_object_animator) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentObjectAnimatorBinding.bind(view)
 
-        val objectAnimator = ObjectAnimator.ofFloat(binding.image, "translationX", 0f, 200f)
+        val objectAnimator = ObjectAnimator.ofFloat(binding.image, "translationX", 0f, 200f, -100f)
         objectAnimator.duration = 3000
         objectAnimator.start()
     }
